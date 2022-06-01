@@ -13,12 +13,12 @@ public class Hunter : Character
         Name = name;
         var AtackWithString = atack.ToString();
 
-        Console.WriteLine($"{this.Name} atacou com {AtackWithString}");
+        Console.WriteLine($"{Name} atacou com {AtackWithString}");
     }
 
     public Hunter(string name)
     {
-        this.Name = name;
+        Name = name;
     }
 
 
