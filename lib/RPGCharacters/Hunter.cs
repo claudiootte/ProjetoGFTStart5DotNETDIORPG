@@ -1,13 +1,25 @@
 ﻿namespace DIORPG.RPGCharacters;
 public class Hunter : Character
 {
-    public override string Name { get; set; }
+    public override string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
 
 
-    public override void Atack(string name)
+    public override void Atack(AtackWith atack)
     {
         Name = name;
+        var AtackWithString = atack.ToString();
 
-        Console.WriteLine($"{Name} atacou!");
+        Console.WriteLine($"{this.Name} atacou com {AtackWithString}");
     }
+
+    public Hunter(string name)
+    {
+        this.Name = name;
+    }
+
+
 }

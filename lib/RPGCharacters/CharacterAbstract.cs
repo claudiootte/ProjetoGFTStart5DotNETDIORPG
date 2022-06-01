@@ -9,7 +9,7 @@ public abstract class Character
         set;
     }
 
-    public abstract void Atack(string name);
+    public abstract void Atack(AtackWith atack);
 
 
 
