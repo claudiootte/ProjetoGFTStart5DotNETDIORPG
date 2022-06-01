@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "RPGCore/1.0.0": {
+        "dependencies": {
+          "RPGCharacters": "1.0.0",
+          "RPGCharactersEnum": "1.0.0"
+        },
+        "runtime": {
+          "RPGCore.dll": {}
+        }
+      },
+      "RPGCharacters/1.0.0": {
+        "dependencies": {
+          "RPGCharactersEnum": "1.0.0"
+        },
+        "runtime": {
+          "RPGCharacters.dll": {}
+        }
+      },
+      "RPGCharactersEnum/1.0.0": {
+        "runtime": {
+          "RPGCharactersEnum.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RPGCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RPGCharacters/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RPGCharactersEnum/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "RPGCharacters/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "RPGCharactersEnum": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/RPGCharacters.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RPGCharacters.dll": {}
+        }
+      },
+      "RPGCharactersEnum/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/RPGCharactersEnum.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RPGCharactersEnum.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RPGCharacters/1.0.0": {
+      "type": "project",
+      "path": "../../lib/RPGCharacters/RPGCharacters.csproj",
+      "msbuildProject": "../../lib/RPGCharacters/RPGCharacters.csproj"
+    },
+    "RPGCharactersEnum/1.0.0": {
+      "type": "project",
+      "path": "../../lib/RPGCharactersEnum/RPGCharactersEnum.csproj",
+      "msbuildProject": "../../lib/RPGCharactersEnum/RPGCharactersEnum.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "RPGCharacters >= 1.0.0",
+      "RPGCharactersEnum >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Otte\\.nuget\\packages\\": {}
@@ -33,7 +71,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Otte\\Documents\\Code\\Github\\ProjetoGFTStart5DotNETDIORPG\\lib\\RPGCharactersEnum\\RPGCharactersEnum.csproj": {
+              "projectPath": "C:\\Users\\Otte\\Documents\\Code\\Github\\ProjetoGFTStart5DotNETDIORPG\\lib\\RPGCharactersEnum\\RPGCharactersEnum.csproj"
+            },
+            "C:\\Users\\Otte\\Documents\\Code\\Github\\ProjetoGFTStart5DotNETDIORPG\\lib\\RPGCharacters\\RPGCharacters.csproj": {
+              "projectPath": "C:\\Users\\Otte\\Documents\\Code\\Github\\ProjetoGFTStart5DotNETDIORPG\\lib\\RPGCharacters\\RPGCharacters.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
